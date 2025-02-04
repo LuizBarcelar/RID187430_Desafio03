@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board de Tarefas - Desafio Javascript DNC</title>
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Board de Tarefas</h1>
+      <form id="new-task-form">
+        <label for="new-task-input-name">Nome da tarefa</label>
+        <input
+          id="new-task-input-name"
+          name="title"
+          type="text"
+          placeholder="Nome da tarefa"
+          aria-label="Nome da tarefa"
+          required
+        />
+        <label for="new-task-input-tag">Etiqueta</label>
+        <input
+          id="new-task-input-tag"
+          name="tag"
+          type="text"
+          placeholder="Etiqueta"
+          aria-label="Etiqueta"
+          required
+        />
+        <button type="submit" aria-label="Adicionar tarefa">+</button>
+      </form>
+      <div id="tasks-list-container"></div>
+      <hr />
+      <footer>
+        <span id="done-tasks-counter"></span>
+      </footer>
+    </main>
+  </body>
+</html>
